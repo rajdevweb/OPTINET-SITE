@@ -4,12 +4,265 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>OptiNet</title>
+    <link rel="icon" href="./asset/logo.svg">
     <link rel="stylesheet" href="./output.css">
+    <!-- boxicon site link -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-<body>
-    
+<body class="bg-black">
+    <!-- navbar -->
+
+
+    <nav class="bg-black overflow-hidden">
+        <div class="bg-[url('./asset/f.png')] bg-cover bg-top">
+            <div class="contain  flex justify-between text-white">
+                <div class="flex justify-between gap-10 items-center ">
+                    <div class="flex justify-between group gap-2 items-center ">
+                        <a href="#" class="flex justify-between gap-2 items-center ">
+                            <img class="scale-100 hover:rotate-180 hover:animate-fast-spin transition-all duration-300 group-hover:scale-110"
+                                src="./asset/logo.svg" alt="">
+                            <h1
+                                class="text-white font-poppins font-medium  scale-100 group-hover:scale-110 transition-all duration-300">
+                                OptiNet
+                            </h1>
+                        </a>
+                    </div>
+                    <div class="hidden md:flex justify-between items-center gap-5">
+                        <a class=" #" href="#">SOLUTIONS
+                            <img src="./asset/up-arrow.svg" alt="">
+                        </a>
+                        <a class="#" href="#">SOLUTIONS</a>
+                        <a class="#" href="#">SOLUTIONS</a>
+                        <a class="#" href="#">SOLUTIONS</a>
+                    </div>
+                </div>
+                <div class="flex justify-between gap-10 items-center ">
+                    <a href="#">LEARN</a>
+                    <a href="#">SUPPORT</a>
+                    <button class="text-[5px] md:text-1xl primary-button ">
+                        <span class="hidden md:flex">MAKE AN ENQUIRY</span>
+                        <span class="mdspanden">SIGN UP</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="w-full h-1 bg-white bg-gradient-to-t from-blue-500 via-sky-500 to-blue-600 "></div>
+
+        <!-- <div id="mybtn" class="p-2 font-medium" onclick="myFunction()">
+        <i class="fa-solid fa-bars-staggered"></i>
+    </div> -->
+        <!-- mobile toggle menu -->
+        <!-- toggle btn -->
+        <!-- <div id="hidden-nav" class=" fixed z-10 bg-white md:hidden p-2 inset-0 text-black flex flex-col  gap-4">
+            <!-- logo and toggle btn -->
+        <!-- <div class=" flex justify-between group gap-2 items-center ">
+                <a href=" #" class="flex justify-between gap-2 items-center ">
+                    <img class="scale-100 hover:rotate-180 animate-fast-spin transition-all duration-300 group-hover:scale-110"
+                        src="./asset/logo.svg" alt="">
+                    <h1
+                        class="text-black font-poppins font-medium  scale-100 group-hover:scale-110 transition-all duration-300">
+                        OptiNet
+                    </h1>
+                </a>
+            </div> -->
+
+        <!-- toggle menu -->
+        <!-- <div id="myNav" class="overlay text-black">
+            <div class="overlay-content items-start flex flex-col gap-5">
+                <a href="#">SOLUTIONS</a>
+                <a href="#">SOLUTIONS</a>
+                <a href="#">SOLUTIONS</a>
+                <a href="#">SOLUTIONS</a>
+            </div>
+        </div> -->
+
+        <!-- <div class="w-full h-1 bg-white bg-gradient-to-t from-blue-500 via-sky-500 to-blue-600 "></div>
+
+        <div class="flex  justify-center p-4 ">
+            <button
+                class="text-[15px] text-white hover:scale-[1.1] transition-all duration-300 w-full p-3 md:text-1xl primary-button ">MAKE
+                AN
+                ENQUIRY</button>
+        </div>
+
+
+        </div> -->
+
+
+
+    </nav>
+
+
+
+    <!-- hero section -->
+
+
+    <section class="p-2  rounded-md ">
+        <div class=" hidden md:flex justify-center">
+            <video loop autoplay muted play-inline class=" bg-video bg-cover w-[90%] h-full blur-[0px]  -top-[22rem]  md:-top-[21rem] filter-none
+        absolute -z-10 bg-blend-screen" src="./video/blackhole.mp4"></video>
+
+        </div>
+
+        <div
+            class=" border overflow-hidden container flex flex-col md:flex-row justify-between    border-white max-h-screen gap-4">
+            <div
+                class="left-side  text-center md:text-start gap-3 flex flex-col mt-7 md:mt-36 leading-snug text-white md:w-1/2">
+                <div class="flex p-2 md:p-1 border items-start gap-1 md:gap-4 ">
+                    <div class="flex justify-center items-center gap-1 ">
+                        <div class="w-3 h-3 bg-lightGreen rounded-full "></div>
+                        <h1 class="text-[10px] md:text-[16px]">ZERO-LOSS FAILOVER</h1>
+                    </div>
+                    <h1 class="text-[10px] md:text-[16px]">MULTI-TENANT</h1>
+                    <h1 class="text-[10px] md:text-[16px] hidden md:flex">ENTERPRISE SOLUTIONS </h1>
+                </div>
+
+                <div>
+                    <h1 class=" md:leading-[4.375rem] p-2 text-2xl md:text-6xl border font-medium">ZEBRO-LOSS
+                        <span>BUSSINESS</span>
+                        CONTINUITY
+                    </h1>
+                </div>
+
+                <div class="flex justify-center items-center md:justify-start ">
+                    <button
+                        class="bg-white text-black  flex justify-center text-center items-center md:p-2 p-1 rounded-full ">LEARN
+                        MORE <i class='bx text-2xl bx-right-arrow-alt' style='color:#000000'></i></button>
+                </div>
+
+            </div>
+            <div class="right-side md:hidden  md:w-1/2 border order-first md:order-last  relative">
+                <h1 class="text-5xl text-white absolute -z-10 right-10">krishna</h1>
+
+                <img class="   md:scale-125 w-full  md:rotate-0  " src="/asset/ribbon10.png" alt="">
+            </div>
+            <div class="right-side hidden md:flex  md:w-1/2 border order-first md:order-last  relative">
+                <h1 class="text-5xl text-white absolute -z-10 right-10">krishna</h1>
+
+                <img class="   md:scale-125 w-full  md:rotate-0  " src="/asset/ribbon7.png" alt="">
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- our network -->
+    <section class="relative  our-network-section p-2 text-white border  bg-no-repeat bg-cover bg-center  ">
+        <img src="./asset/hori.png" class="absolute w-full h-full scale-x-[-1] opacity-45 hidden md:flex -z-10 md:"
+            alt="">
+        <div class="border text-center flex flex-col gap-12 py-12">
+            <h4 class="text-2xl"><i class='bx bx-right-arrow-alt rotate-45' style='color:#ffffff'></i>
+                SOLUTIONS
+            </h4>
+            <h1 class="text-3xl ">Productivity solutions that capitalise <br> on your network investment</h1>
+        </div>
+        <div class="container max-h-screen flex flex-col md:flex-row">
+            <div class="md:w-1/2 p-2 border rounded-md">
+                <img class="rounded-md" src="./asset/machnical.svg" alt="">
+            </div>
+            <div class="md:w-1/2 flex flex-col border max-w-">
+                <div class="border mx-auto my-auto p-12 flex  flex-col gap-5">
+                    <div class="flex items-center">
+                        <i class='bx bx-right-arrow-alt rotate-45 text-[30px]' style='color:#ffffff'></i>
+                        <h1 class="text-2xl">CONNECTIVITY</h1>
+                    </div>
+
+                    <p class="leading-7 font-normal">Last mile or first mile, fibre or copper, Ethernet or wireless,
+                        20Mbs or 100Gbs
+                        - we'll always find
+                        the best-performing
+                        connectivity to fit your needs and location.</p>
+
+                    <div class="flex justify-center items-center md:justify-start ">
+                        <button
+                            class="bg-white text-black  flex justify-center text-center items-center md:p-2 p-1 rounded-full ">LEARN
+                            MORE <i class='bx text-2xl bx-right-arrow-alt' style='color:#000000'></i></button>
+                    </div>
+
+                    <div class="grid grid-cols-1   ">
+                        <div class="border-b-2 p-2 border-t-2">Network Technologies</div>
+                        <div class="border-b-2 p-2 ">Network Technologies</div>
+                        <div class="border-b-2 p-2 ">Network Technologies</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- over network -->
+    <section class="container connectivity-section mt-12 text-white">
+        <div class="border text-center flex flex-col gap-4 py-40">
+            <h4 class="text-1xl"><i class='bx bx-right-arrow-alt rotate-45' style='color:#ffffff'></i>
+                Our Network
+            </h4>
+            <h1 class="text-3xl font-thin ">Designed with the latest technology for</h1>
+            <h1 class="text-3xl font-medium">performance, fexibility and high capacity.</h1>
+
+            <div class="btn flex justify-center gap-4">
+                <button class=" primary-button ">FIDN
+                    OUT
+                    MORE</button>
+                <button class=" border p-1 rounded-md">OUR LOOKING GLASS</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- about us section -->
+
+    <section class="relative  about us  p-2 text-white border  bg-no-repeat bg-cover bg-center  ">
+        <img src="./asset/hori.png" class="absolute w-full h-full scale-x-[-1] opacity-45 hidden md:flex -z-10 md:"
+            alt="">
+        <div class="container max-h-screen flex flex-col md:flex-row">
+            <div class="md:w-1/2 p-2 border rounded-md">
+                <img class="rounded-md" src="./asset/team.png" alt="">
+            </div>
+            <div class="md:w-1/2 flex flex-col border max-w-">
+                <div class="border mx-auto my-auto p-12 flex  flex-col gap-5">
+                    <div class="flex items-center">
+                        <i class='bx bx-right-arrow-alt rotate-45 text-[30px]' style='color:#ffffff'></i>
+                        <h1 class="text-2xl">ABOUT US</h1>
+                    </div>
+
+                    <p class="leading-10 font-thin text-4xl ">Navigating the technology
+                        and communication provider marketplace shouldn’t be a complex and daunting process.</p>
+
+                    <div class="flex justify-center items-center md:justify-start ">
+                        <button
+                            class="bg-white text-black  flex justify-center text-center items-center md:p-2 p-1 rounded-full ">LEARN
+                            MORE <i class='bx text-2xl bx-right-arrow-alt' style='color:#000000'></i></button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- trusted section -->
+    <section class="trusted-section"></section>
+
+    <!-- group case study section -->
+    <section class="group-case-study-section"></section>
+
+    <!-- why optinet section -->
+    <section class="why-optinet-section"></section>
+
+    <!-- footer -->
+    <footer></footer>
+
+    <div class="h-screen w-auto"></div>
+
+
+
+
+
+
 </body>
 
 </html>
