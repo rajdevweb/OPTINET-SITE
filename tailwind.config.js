@@ -12,7 +12,8 @@ module.exports = {
 
       backgroundImage: {
         main: "url('./asset/aa.png')",
-        bgblur: "url('./asset/hori.png')"
+        bgblur: "url('./asset/hori.png')",
+        footerbg:"url('./asset/bg-footer.png')",
         
       },
      lineHeight:{
