@@ -47,7 +47,105 @@ body {
     .gradient-text{
         @apply bg-gradient-to-r from-indigo-600 via-pink-600 to-indigo-600 text-transparent bg-clip-text;
     }
+
+    .gradient{
+        background: linear-gradient(to right, #3b82f6, #c73bf6, #3b82f6, #00b95c, #f6993b,#f63b7d);
+        background-size: 100%;
+        background-clip: text;
+        -webskit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: animation-gradient 2s ease infinite;
+    }
+
+    @keyframes animation-gradient {
+        to {
+            background-position: 100% ;
+        }
+    }
+
+    .slider{
+        mask-image: linear-gradient(to right transparent, #000 10% 6% transparent);
+        mix-blend-mode: difference;
+        opacity:0.5;
+    }
+
+    /* blur effect  */
+    .autoBlur{
+        animation: autoBlurAnimation linear both ;
+        animation-timeline:view();
+        /* animation-duration: 2s; */
+    }
+     @keyframes autoBlurAnimation {
+        0% {
+           filter: blur(40px);
+           
+            opacity: 0;
+        }
+        20% , 65% {
+           filter: blur(0px);
+            opacity: 1;
+        }
+        100%{
+            filter: blur(40px);
+            opacity: 0;
+        }
+    } 
+
+    /* popup display animation */
+
+    .popup{
+        animation: autoPopup   both ;
+        animation-timeline:view();
+        /* animation-duration: 2s; */
+    }
+
+    @keyframes autoPopup {
+        from{
+            filter: blur(10px);
+            transform: translateY(-20px) scale(0);
+            opacity: 0.2;
+        }
+        to{
+            opacity: 1;
+            filter: blur(0px);
+            transform: translateY(0px) scale(1)
+        }
+      
+    }
+
+    .popup-section{
+        animation: autoPopupSection  both ;
+        animation-timeline:view();
+        animation-duration: 2s;   
+        
+    }
+
+    @keyframes autoPopupSection {
+    0% {
+            transform: translateX(-800px) scale(0.1);
+    
+            opacity: 0;
+        }
+    
+        20%,
+        65% {
+                        transform: translateY(0px) scale(1);
+            opacity: 1;
+        }
+    
+        100% {
+            
+            opacity: 0;
+        }
+
+    
+      
+    
+    
+
+    }
 }
+
 
 /* .big-container{
     position: relative;

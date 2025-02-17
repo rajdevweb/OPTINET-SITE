@@ -5,13 +5,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel="stylesheet" />
+    <style>
+        #container {
+            height: 500px;
+            overflow-y: scroll;
+            scroll-timeline: --squareTimeline y;
+            /* Firefox supports the older "vertical" syntax */
+            scroll-timeline: --squareTimeline vertical;
+            position: relative;
+        }
+
+        #square {
+            background-color: deeppink;
+            width: 100px;
+            height: 100px;
+            animation-name: rotateAnimation;
+            animation-duration: 1ms;
+            /* Firefox requires this to apply the animation */
+            animation-timeline: --squareTimeline;
+            position: absolute;
+            bottom: 0;
+        }
+
+        #stretcher {
+            height: 600px;
+            background: #7a7a7a;
+            border: 2px solid #000;
+        }
+
+        @keyframes rotateAnimation {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
 </head>
 
 <body>
-    <i class='bx bx-user'></i>
+    <div id="container">
+        <div id="square"></div>
+        <div id="stretcher"></div>
+    </div>
 
-    <i class='bx bxs-hot'></i>
 </body>
 
 </html>
