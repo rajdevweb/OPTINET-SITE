@@ -148,7 +148,99 @@ body {
     
 
     }
+
+    .fade-in{
+        animation:fadeOut linear both infinite alternate 2s;
+        /* animation-timeline:view(); */
+        /* animation-duration: 2s; */
+    }
+
+    
+    @keyframes fadeOut { 
+       from{
+        opacity: 1;
+        filter: blur(0px);
+        word-spacing: 0px;
+       
+        
+       }
+       to{
+        opacity: 0;
+        filter: blur(10px);
+        word-spacing: 50px;
+        
+      
+       }
+       
+    }
+
+    .mygalary{
+        animation: rightDirection 3s     both ;
+        animation-timeline:view;
+        /* animation-duration: 2s; */   
+    }
+         @keyframes rightDirection {
+          from{
+            transform: translateX(1500px);
+            z-index: 10;
+          }
+          to{
+            transform: translateX(200px);
+          
+          }
+    
+           
+
+
 }
+
+.bg-galary {
+    animation: rightDirection 3s both;
+    animation-timeline: view;
+    /* animation-duration: 2s; */
+}
+
+@keyframes rightDirection {
+    from {
+        transform: translateX(300px);
+        z-index: -1;
+    }
+
+    to {
+        transform: translateX(10px);
+
+    }
+
+
+
+
+}
+
+.left-direction {
+    animation: rightDirection 3s both;
+    animation-timeline: view;
+    /* animation-duration: 2s; */
+}
+
+@keyframes rightDirection {
+    from {
+        transform: translateX(-300px);
+        z-index: 10;
+    }
+
+    to {
+        transform: translateX(0px);
+
+    }
+
+
+
+
+}
+}
+
+
+
 
 
 /* .big-container{

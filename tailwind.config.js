@@ -14,6 +14,7 @@ module.exports = {
         main: "url('./asset/aa.png')",
         bgblur: "url('./asset/hori.png')",
         footerbg:"url('./asset/bg-footer.png')",
+        raj:"url('./asset/raj-view.png')",
         
       },
      lineHeight:{

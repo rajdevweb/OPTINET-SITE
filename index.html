@@ -18,8 +18,8 @@
     <!-- navbar -->
 
 
-    <nav class="bg-black overflow-hidden ">
-        <div class="bg-[url('./asset/f.png')] bg-cover bg-top autoBlur relative">
+    <nav class="bg-black overflow-hidden sticky top-0 z-50">
+        <div class="bg-[url('./asset/f.png')]  bg-cover bg-top autoBlur relative">
             <div class="contain  flex justify-between text-white">
                 <div class="flex justify-between gap-10 items-center ">
                     <div class="flex justify-between group gap-2 items-center ">
@@ -36,9 +36,9 @@
                         <a class="sm:text-[10px] lg:text-[1rem]" href="#">SOLUTIONS
                             <img src="./asset/up-arrow.svg" alt="">
                         </a>
-                        <a class="text-[10px] lg:text-[1rem] " href="#">ZERO-LOSS FAILOVER</a>
-                        <a class="text-[10px] lg:text-[1rem] " href="#">MULTI-TENANT</a>
-                        <a class="text-[10px] lg:text-[1rem] " href="#">ENTERPRISE NNI</a>
+                        <a class="text-[10px]  lg:text-[1rem] " href="#">ZERO-LOSS FAILOVER</a>
+                        <a class="text-[10px]  lg:text-[1rem] " href="#">MULTI-TENANT</a>
+                        <a class="text-[10px]  lg:text-[1rem] " href="#">ENTERPRISE NNI</a>
                     </div>
                 </div>
                 <div class=" hidden md:flex justify-between gap-10 items-center ">
@@ -59,7 +59,8 @@
 
         </div>
         <!-- underline -->
-        <div class="w-full h-1 bg-transparent bg-gradient-to-t from-blue-500 via-sky-500 to-blue-600 "></div>
+        <div class="w-full h-1 bg-transparent bg-gradient-to-t from-blue-500 via-sky-500 to-blue-600 fade-in
+     "></div>
         <!-- mobile menu -->
         <div id="mobile-menu" class=" z-10 bg-black  inset-0 fixed hidden md:hidden ">
             <div class="flex justify-between group  gap-2 items-center p-4 ">
@@ -76,24 +77,24 @@
                 </button>
             </div>
 
-            <div class=" flex flex-col gap-2 p-2 m-0">
+            <div class=" flex left-direction flex-col gap-2 p-2 m-0">
 
                 <a class=" text-white hover-border-b border-white  hover:text-black rounded-sm hover:scale-95 transition duration-300 hover:bg-gray-100 p-1 "
                     href="#">
                     <span class="">SOLUTIONS</span>
                 </a>
-                <a class="text-white  hover:text-black rounded-sm hover:scale-95 transition duration-300 hover:bg-gray-100 p-1"
+                <a class="text-white left-direction  hover:text-black rounded-sm hover:scale-95 transition duration-300 hover:bg-gray-100 p-1"
                     href="#">ZERO-LOSS
                     FAILOVER</a>
-                <a class="text-white  hover:text-black rounded-sm hover:scale-95 transition duration-300 hover:bg-gray-100 p-1"
+                <a class="text-white left-direction hover:text-black rounded-sm hover:scale-95 transition duration-300 hover:bg-gray-100 p-1"
                     href="#">MULTI-TENANT</a>
-                <a class="text-white  hover:text-black rounded-sm hover:scale-95 transition duration-300 hover:bg-gray-100 p-1"
+                <a class="text-white left-direction hover:text-black rounded-sm hover:scale-95 transition duration-300 hover:bg-gray-100 p-1"
                     href="#">ENTERPRISE NNI</a>
                 <a class="text-white  hover:text-black rounded-sm hover:scale-95 transition duration-300 hover:bg-gray-100 p-1"
                     href="#">LEARN</a>
                 <a class="text-white  hover:text-black rounded-sm hover:scale-95 transition duration-300 hover:bg-gray-100 p-1"
                     href="#">SUPPORT</a>
-                <button class="primary-button  text-white ">
+                <button class="primary-button  left-direction text-white ">
                     <div class="scale-100 hover:scale-110 transition-all duration-300 group-hover:scale-110">
                         Get Enquiry
                     </div>
@@ -112,7 +113,20 @@
     <!-- hero section -->
 
 
-    <section class="p-2  rounded-md autoBlur popup-section overflow-hidden ">
+    <section class="p-2 relative  rounded-md autoBlur popup-section overflow-hidden ">
+        <div
+            class="absolute top-1/2 tracking-[.25em] hidden xl:block  rotate-90  -translate-x2/2 -translate-y-1/2  text-white">
+            Build
+            Your
+            Brand
+        </div>
+        <div
+            class="absolute hidden xl:block bg-gradient-to-r from-indigo-500 via-blue-500 to-blue-500 text-transparent bg-clip-text fade-in top-1/2  rotate-90  -translate-x2/2 -translate-y-1/2  ">
+            Build
+            Your
+            Brand
+        </div>
+
         <div class=" hidden md:block justify-center items-center
          ">
             <video loop autoplay muted play-inline class=" bg-video bg-cover w-[90%] h-full blur-[0px]  md:-top-[19rem]  
@@ -126,17 +140,17 @@
         <div class=" overflow-hidden container flex flex-col md:flex-row justify-between  max-h-screen
             gap-4">
             <div
-                class="left-side  text-center md:text-start gap-3 flex flex-col mt-7 md:mt-36 leading-snug text-white md:w-1/2">
-                <div class="flex p-2 md:p-1 items-start gap-1 md:gap-4 ">
-                    <div class="flex justify-center items-center gap-1 ">
+                class="left-side   text-center md:text-start gap-3 flex flex-col mt-7 md:mt-36 leading-snug text-white md:w-1/2">
+                <div class="flex p-2 md:p-1 items-start gap-1 md:gap-4 left-direction">
+                    <div class="flex justify-center items-center gap-1 left-direction ">
                         <div class="w-3 h-3 bg-lightGreen rounded-full "></div>
-                        <h1 class="text-[10px] md:text-[16px]">ZERO-LOSS FAILOVER</h1>
+                        <h1 class="text-[10px] md:text-[16px] left-direction">ZERO-LOSS FAILOVER</h1>
                     </div>
-                    <h1 class="text-[10px] md:text-[16px]">MULTI-TENANT</h1>
-                    <h1 class="text-[10px] md:text-[16px] hidden md:flex">ENTERPRISE SOLUTIONS </h1>
+                    <h1 class="text-[10px] md:text-[16px] left-direction">MULTI-TENANT</h1>
+                    <h1 class="text-[10px] md:text-[16px] hidden md:flex mygalary">ENTERPRISE SOLUTIONS </h1>
                 </div>
 
-                <div>
+                <div class="left-direction">
                     <h1 class=" md:leading-[4.375rem] p-2 text-2xl md:text-6xl  font-medium">ZEBRO-LOSS
                         <span class="gradient">BUSSINESS</span>
                         CONTINUITY
@@ -155,12 +169,29 @@
 
                 <img class="   md:scale-125 w-full  md:rotate-0  " src="/asset/ribbon10.png" alt="">
             </div>
-            <div class="right-side hidden md:flex  md:w-1/2  order-first md:order-last  relative">
+            <div class="  right-side hidden md:flex  md:w-1/2  order-first md:order-last  relative">
                 <!-- <h1 class="text-5xl text-white absolute -z-10 top-52">krissahnaa</h1> -->
 
-                <img class="   md:scale-125 w-full  md:rotate-0  " src="/asset/ribbon7.png" alt="">
+                <div class="overflow-hidden hidden lg:block">
+                    <div
+                        class="border-0 shadow-md  opacity-1 border-black h-auto w-[25rem] z-30   bg-gray-950  absolute top-1/2   left-1/2 transform -translate-x-1/2 -translate-y-1/2 mygalary   rounded-xl ">
+                        <img class=" rounded-xl  trasition-all duration-300 blur-sm hover:blur-none "
+                            src="./asset/raj-view.png" alt="">
+
+
+                    </div>
+                    <div
+                        class="border-0 shadow-md border-black h-auto w-[30rem] z-10   bg-gray-950  absolute top-1/2   left-1/2 transform -translate-x-1/2 -translate-y-1/2   rounded-xl ">
+                        <img class=" blur-[2px] hover:blur-none rounded-xl trasition-all duration-300 "
+                            src="./asset/raj-view.png" alt="">
+
+
+                    </div>
+                </div>
+                <img class="bg-galary mygalary -z-10 md:scale-125 w-full md:rotate-0 " src=" /asset/ribbon9.png" alt="">
             </div>
         </div>
+
     </section>
 
 
