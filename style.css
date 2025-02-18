@@ -30,6 +30,10 @@ body {
 }
 
 @layer components {
+    .scale-100{
+        transform: scale(0.5);
+    }
+
     .primary-button {
         @apply bg-gradient-to-bl font-medium from-teal-400 via-sky-400 to-indigo-500 p-2 rounded-md
     }

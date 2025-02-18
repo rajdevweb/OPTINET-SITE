@@ -19,7 +19,7 @@
 
 
     <nav class="bg-black overflow-hidden ">
-        <div class="bg-[url('./asset/f.png')] bg-cover bg-top autoBlur">
+        <div class="bg-[url('./asset/f.png')] bg-cover bg-top autoBlur relative">
             <div class="contain  flex justify-between text-white">
                 <div class="flex justify-between gap-10 items-center ">
                     <div class="flex justify-between group gap-2 items-center ">
@@ -32,70 +32,79 @@
                             </h1>
                         </a>
                     </div>
-                    <div class="hidden md:flex justify-between items-center gap-5">
-                        <a class="" href="#">SOLUTIONS
+                    <div class="hidden md:flex justify-between items-center md:gap-5">
+                        <a class="sm:text-[10px] lg:text-[1rem]" href="#">SOLUTIONS
                             <img src="./asset/up-arrow.svg" alt="">
                         </a>
-                        <a class="#" href="#">SOLUTIONS</a>
-                        <a class="#" href="#">SOLUTIONS</a>
-                        <a class="#" href="#">SOLUTIONS</a>
+                        <a class="text-[10px] lg:text-[1rem] " href="#">ZERO-LOSS FAILOVER</a>
+                        <a class="text-[10px] lg:text-[1rem] " href="#">MULTI-TENANT</a>
+                        <a class="text-[10px] lg:text-[1rem] " href="#">ENTERPRISE NNI</a>
                     </div>
                 </div>
-                <div class="flex justify-between gap-10 items-center ">
-                    <a href="#">LEARN</a>
-                    <a href="#">SUPPORT</a>
-                    <button class="text-[5px] md:text-1xl primary-button ">
-                        <span class="hidden md:flex">MAKE AN ENQUIRY</span>
-                        <span class="mdspanden">SIGN UP</span>
+                <div class=" hidden md:flex justify-between gap-10 items-center ">
+                    <a class="  text-[10px] lg:text-[1rem] " href="#">LEARN</a>
+                    <a class=" text-[10px] lg:text-[1rem] " href="#">SUPPORT</a>
+                    <button class="text-[10px] lg:text-[1rem] primary-button ">
+                        Get Enquiry
                     </button>
-                </div>
-            </div>
-        </div>
-        </div>
-        <div class="w-full h-1 bg-white bg-gradient-to-t from-blue-500 via-sky-500 to-blue-600 "></div>
 
-        <!-- <div id="mybtn" class="p-2 font-medium" onclick="myFunction()">
-        <i class="fa-solid fa-bars-staggered"></i>
-    </div> -->
-        <!-- mobile toggle menu -->
-        <!-- toggle btn -->
-        <!-- <div id="hidden-nav" class=" fixed z-10 bg-white md:hidden p-2 inset-0 text-black flex flex-col  gap-4">
-            <!-- logo and toggle btn -->
-        <!-- <div class=" flex justify-between group gap-2 items-center ">
-                <a href=" #" class="flex justify-between gap-2 items-center ">
-                    <img class="scale-100 hover:rotate-180 animate-fast-spin transition-all duration-300 group-hover:scale-110"
+
+                </div>
+                <button class=" flex md:hidden text-3xl" onclick="openMenu()">
+                    <i class='bx bx-menu'></i>
+                </button>
+
+            </div>
+
+
+        </div>
+        <!-- underline -->
+        <div class="w-full h-1 bg-transparent bg-gradient-to-t from-blue-500 via-sky-500 to-blue-600 "></div>
+        <!-- mobile menu -->
+        <div id="mobile-menu" class=" z-10 bg-black  inset-0 fixed hidden md:hidden ">
+            <div class="flex justify-between group  gap-2 items-center p-4 ">
+                <a href="#" class="flex justify-between gap-2 items-center ">
+                    <img class=" hover:rotate-180 hover:animate-fast-spin transition-all duration-300 group-hover:scale-110"
                         src="./asset/logo.svg" alt="">
-                    <h1
-                        class="text-black font-poppins font-medium  scale-100 group-hover:scale-110 transition-all duration-300">
+                    <h1 class="text-white font-poppins font-medium  group-hover:scale-110 transition-all duration-300">
                         OptiNet
                     </h1>
                 </a>
-            </div> -->
 
-        <!-- toggle menu -->
-        <!-- <div id="myNav" class="overlay text-black">
-            <div class="overlay-content items-start flex flex-col gap-5">
-                <a href="#">SOLUTIONS</a>
-                <a href="#">SOLUTIONS</a>
-                <a href="#">SOLUTIONS</a>
-                <a href="#">SOLUTIONS</a>
+                <button class=" flex text-4xl text-white md:hidden  " onclick="openMenu()">
+                    <i class='bx bx-x    '></i>
+                </button>
             </div>
-        </div> -->
 
-        <!-- <div class="w-full h-1 bg-white bg-gradient-to-t from-blue-500 via-sky-500 to-blue-600 "></div>
+            <div class=" flex flex-col gap-2 p-2 m-0">
 
-        <div class="flex  justify-center p-4 ">
-            <button
-                class="text-[15px] text-white hover:scale-[1.1] transition-all duration-300 w-full p-3 md:text-1xl primary-button ">MAKE
-                AN
-                ENQUIRY</button>
+                <a class=" text-white hover-border-b border-white  hover:text-black rounded-sm hover:scale-95 transition duration-300 hover:bg-gray-100 p-1 "
+                    href="#">
+                    <span class="">SOLUTIONS</span>
+                </a>
+                <a class="text-white  hover:text-black rounded-sm hover:scale-95 transition duration-300 hover:bg-gray-100 p-1"
+                    href="#">ZERO-LOSS
+                    FAILOVER</a>
+                <a class="text-white  hover:text-black rounded-sm hover:scale-95 transition duration-300 hover:bg-gray-100 p-1"
+                    href="#">MULTI-TENANT</a>
+                <a class="text-white  hover:text-black rounded-sm hover:scale-95 transition duration-300 hover:bg-gray-100 p-1"
+                    href="#">ENTERPRISE NNI</a>
+                <a class="text-white  hover:text-black rounded-sm hover:scale-95 transition duration-300 hover:bg-gray-100 p-1"
+                    href="#">LEARN</a>
+                <a class="text-white  hover:text-black rounded-sm hover:scale-95 transition duration-300 hover:bg-gray-100 p-1"
+                    href="#">SUPPORT</a>
+                <button class="primary-button  text-white ">
+                    <div class="scale-100 hover:scale-110 transition-all duration-300 group-hover:scale-110">
+                        Get Enquiry
+                    </div>
+
+                </button>
+            </div>
+
+
         </div>
 
-
-        </div> -->
-
-
-
+        </div>
     </nav>
 
 
@@ -142,12 +151,12 @@
 
             </div>
             <div class="right-side md:hidden  md:w-1/2  order-first md:order-last  relative">
-                <h1 class="text-5xl text-white absolute -z-10 -right-10">krishna</h1>
+                <!-- <h1 class="text-5xl text-white absolute -z-10 -right-10">krishna</h1> -->
 
                 <img class="   md:scale-125 w-full  md:rotate-0  " src="/asset/ribbon10.png" alt="">
             </div>
             <div class="right-side hidden md:flex  md:w-1/2  order-first md:order-last  relative">
-                <h1 class="text-5xl text-white absolute -z-10 top-52">krishnaa</h1>
+                <!-- <h1 class="text-5xl text-white absolute -z-10 top-52">krissahnaa</h1> -->
 
                 <img class="   md:scale-125 w-full  md:rotate-0  " src="/asset/ribbon7.png" alt="">
             </div>
@@ -582,7 +591,7 @@
 
 
 
-
+    <script src="./script.js"></script>
 </body>
 
 </html>
