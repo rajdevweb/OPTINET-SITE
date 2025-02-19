@@ -18,8 +18,8 @@
     <!-- navbar -->
 
 
-    <nav class="bg-black overflow-hidden sticky top-0 z-50">
-        <div class="bg-[url('./asset/f.png')]  bg-cover bg-top autoBlur relative">
+    <nav class="bg-black   sticky top-0 z-50">
+        <div class="bg-[url('./asset/f.png')]  bg-cover bg-top  relative">
             <div class="contain  flex justify-between text-white">
                 <div class="flex justify-between gap-10 items-center ">
                     <div class="flex justify-between group gap-2 items-center ">
@@ -32,9 +32,20 @@
                             </h1>
                         </a>
                     </div>
-                    <div class="hidden md:flex justify-between items-center md:gap-5">
-                        <a class="sm:text-[10px] lg:text-[1rem]" href="#">SOLUTIONS
-                            <img src="./asset/up-arrow.svg" alt="">
+                    <div class="relative hidden md:flex justify-between items-center md:gap-5">
+                        <a id="showBtn"
+                            class="  sm:text-[10px] lg:text-[1rem] transition-all duration-300 hover:-translate-y-1"
+                            href="#">SOLUTIONS
+                            <div id="showing-div"
+                                class="bg-white hidden     text-black absolute w-fit  rounded-md gap-3 top-6  z-50">
+                                <div class="flex flex-col gap-3 p-2">
+                                    <a href="#">Solution 1</a>
+                                    <a href="#">Solution 2</a>
+                                    <a href="#">Solution 3</a>
+                                    <a href="#">Solution 4</a>
+                                </div>
+
+                            </div>
                         </a>
                         <a class="text-[10px]  lg:text-[1rem] " href="#">ZERO-LOSS FAILOVER</a>
                         <a class="text-[10px]  lg:text-[1rem] " href="#">MULTI-TENANT</a>
@@ -59,7 +70,7 @@
 
         </div>
         <!-- underline -->
-        <div class="w-full h-1 bg-transparent bg-gradient-to-t from-blue-500 via-sky-500 to-blue-600 fade-in
+        <div class="w-full h-1 z-10  bg-transparent bg-gradient-to-t from-blue-500 via-sky-500 to-blue-600 fade-in
      "></div>
         <!-- mobile menu -->
         <div id="mobile-menu" class=" z-10 bg-black  inset-0 fixed hidden md:hidden ">
@@ -157,10 +168,12 @@
                     </h1>
                 </div>
 
-                <div class="flex justify-center items-center md:justify-start ">
+                <div class="flex justify-center group items-center md:justify-start ">
                     <button
-                        class="bg-white text-black  flex justify-center text-center items-center md:p-2 p-1 rounded-full ">LEARN
-                        MORE <i class='bx text-2xl bx-right-arrow-alt' style='color:#000000'></i></button>
+                        class="bg-white text-black  flex justify-center text-center items-center md:p-2 p-1 rounded-full hover:scale-105 transition-all duration-300 ">LEARN
+                        MORE <i
+                            class='bx text-[20px] transition-all duration-300 group-hover:translate-x-1 bx-right-arrow-alt'
+                            style='color:#000000'></i></button>
                 </div>
 
             </div>
@@ -224,7 +237,7 @@
                         the best-performing
                         connectivity to fit your needs and location.</p>
 
-                    <div class="flex justify-center items-center md:justify-start ">
+                    <div class="flex btnscale justify-center items-center md:justify-start ">
                         <button
                             class="bg-white text-black  flex justify-center text-center items-center md:p-2 p-1 rounded-full ">LEARN
                             MORE <i class='bx text-2xl bx-right-arrow-alt' style='color:#000000'></i></button>
@@ -249,11 +262,11 @@
             <h1 class="md:text-3xl font-thin ">Designed with the latest technology for</h1>
             <h1 class="md:text-3xl font-medium">performance, fexibility and high capacity.</h1>
 
-            <div class="btn flex justify-center gap-1 md:gap-4 mt-4 md:mt-0">
-                <button class=" primary-button  text-[10px]">FIDN
+            <div class="btn flex justify-center  gap-1 md:gap-4 mt-4 md:mt-0">
+                <button class=" btnscale primary-button  text-[10px]">FIDN
                     OUT
                     MORE</button>
-                <button class=" border p-1 rounded-md text-[10px]">OUR LOOKING GLASS</button>
+                <button class=" btnscale border p-1 rounded-md text-[10px]">OUR LOOKING GLASS</button>
             </div>
         </div>
     </section>
@@ -280,7 +293,7 @@
 
                     <div class="flex justify-center items-center md:justify-start ">
                         <button
-                            class="bg-white text-black  flex justify-center text-center items-center md:p-2 p-1 rounded-full ">LEARN
+                            class="btnscale bg-white text-black  flex justify-center text-center items-center md:p-2 p-1 rounded-full ">LEARN
                             MORE <i class='bx text-2xl bx-right-arrow-alt' style='color:#000000'></i></button>
                     </div>
 
@@ -355,7 +368,7 @@
                     during
                     network
                     outages</p>
-                <button class="primary-button text-[10px] w-fit">READ MORE</button>
+                <button class="btnscale primary-button text-[10px] w-fit">READ MORE</button>
             </div>
 
             <img class="  w-full h-full" src="./asset/lady.png" alt="">
@@ -388,7 +401,7 @@
 
                     <div class="flex justify-center items-center md:justify-start ">
                         <button
-                            class="bg-white text-black  flex justify-center text-center items-center md:p-2 p-1 rounded-full ">LEARN
+                            class="bg-white btnscale text-black  flex justify-center text-center items-center md:p-2 p-1 rounded-full ">LEARN
                             MORE <i class='bx text-1xl bx-right-arrow-alt' style='color:#000000'></i></button>
                     </div>
 

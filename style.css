@@ -30,6 +30,13 @@ body {
 }
 
 @layer components {
+   /* .show{
+   display: block !important;
+   } */
+
+    .btnscale{
+        @apply hover:translate-x-1 hover:scale-105 transition-all duration-300
+    }
     .scale-100{
         transform: scale(0.5);
     }
